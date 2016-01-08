@@ -33,7 +33,7 @@ public class RedisWithConfList extends RedisServer{
 
     public synchronized void start() throws EmbeddedRedisException {
     	
-        File executable = new File(args.get(0));
+       /* File executable = new File(args.get(0));
         ProcessBuilder pb = new ProcessBuilder(args);
         pb.directory(executable.getParentFile());
         File f = new File("D:\\tttt.txt");
@@ -46,8 +46,8 @@ public class RedisWithConfList extends RedisServer{
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
-    //    super.start();
+		}*/
+        super.start();
         
     }
     public boolean enableConfigFile(String path)
